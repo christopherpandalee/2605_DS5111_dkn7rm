@@ -1,4 +1,4 @@
-
+!#/usr/bin/bash
 
 USER=christopherpandalee@gmail.com
 NAME=christopherpandalee
