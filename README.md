@@ -42,6 +42,12 @@ To automate the setup, we'll create 4 initialization files.
     default:
       @cat makefile
 
+    init:
+      bash init.sh
+
+    init_git_creds: init
+      bash init_git_creds.s
+
     env:
       python3 -m venv env; . env/bin/activate; pip install --upgrade pip
 
