@@ -1,7 +1,7 @@
 import sys
 import io
 import pytest
-from clean_ids import main
+from lab2_cleaning_ids.clean_ids import main
 
 def test_script_execution(monkeypatch, capsys):
     # 1. Simulate the standard input data

@@ -7,7 +7,7 @@ def main():
             allowed_in_yt_id = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-'
             line = line.strip()
 
-            if len(line) == 11 and all(c in allowed for c in line):
+            if len(line) == 11 and all(c in allowed_in_yt_id for c in line):
                 print(line)
             else:
                 logging.basicConfig(
@@ -22,4 +22,4 @@ def main():
         sys.exit(0)
 
 if __name__=="__main__":
-    myfunction()
+    main()
