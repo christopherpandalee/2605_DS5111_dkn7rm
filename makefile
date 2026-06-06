@@ -13,4 +13,4 @@ lint:
 	-pylint lab2_cleaning_ids/clean_ids.py
 
 test: lint
-	python -m pytest tests
+	python -m pytest -v tests

@@ -1,8 +1,18 @@
+"""
+This module only checks for valid Youtube IDs. See function docstring for valid ID parameters.
+"""
+
 import sys
 import logging
 
 def main():
-    try: 
+    """This function checks whether or not a string is a valid Youtube ID
+    - Valid ID parameters:
+        - Exactly 11 characters
+        - Allowed characters are upper and lowercase characters, dash (-), and underscore(_)
+    - Logs invalid strings in log file
+    """
+    try:
         for line in sys.stdin:
             allowed_in_yt_id = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-'
             line = line.strip()
@@ -16,7 +26,7 @@ def main():
                 format='%(asctime)s %(message)s'
                 )
 
-                logging.error(f"Invalid ID: {line}")
+                logging.error("Invalid ID: %s", line)
 
     except KeyboardInterrupt:
         sys.exit(0)
