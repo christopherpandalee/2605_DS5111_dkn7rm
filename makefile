@@ -1,3 +1,5 @@
+.PHONY: lint test
+
 default:
 	@cat makefile
 
@@ -6,3 +8,9 @@ env:
 
 update:  env
 	. env/bin/activate; pip install -r requirements.txt
+
+lint:
+	-pylint lab2_cleaning_ids/clean_ids.py
+
+test: lint
+	python -m pytest -v tests
