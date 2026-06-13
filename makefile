@@ -11,6 +11,7 @@ update:  env
 
 lint:
 	-pylint lab2_cleaning_ids/clean_ids.py
+	-pylint lab4_transcript_testing/extract_transcripts.py
 
 test: lint
 	python -m pytest -v tests
