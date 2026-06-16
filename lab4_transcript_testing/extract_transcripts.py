@@ -66,7 +66,7 @@ def main():
             #    Finally, flush the stdout 
             payload = {"video_id" : video_id,
                        "raw_text" : raw_text}
-            sys.stdout.write(json.dumps(payload))
+            sys.stdout.write(json.dumps(payload)+"\n")
             sys.stdout.flush()
         except Exception as e:
             logging.error(f"Failed to fetch YouTube transcript for {video_id}: {str(e)}")
