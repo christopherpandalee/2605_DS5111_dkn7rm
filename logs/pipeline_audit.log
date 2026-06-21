@@ -6,3 +6,11 @@
 2026-06-21 02:43:59,308 - CRITICAL - GEMINI_API_KEY not found in environment. Terminating pipeline.
 2026-06-21 02:56:04,317 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
 2026-06-21 02:56:04,353 - INFO - Pipeline Step 2B finished.
+2026-06-21 22:57:00,564 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-06-21 22:57:00,642 - INFO - Orchestrating Gemini enrichment for video: ds5111_v001
+2026-06-21 22:57:00,644 - INFO - AFC is enabled with max remote calls: 10.
+2026-06-21 22:57:03,910 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-06-21 22:57:03,912 - INFO - Orchestrating Gemini enrichment for video: ds5111_v002
+2026-06-21 22:57:03,912 - INFO - AFC is enabled with max remote calls: 10.
+2026-06-21 22:57:05,689 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-06-21 22:57:05,691 - INFO - Pipeline Step 2B finished.
