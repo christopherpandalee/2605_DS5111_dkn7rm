@@ -5,8 +5,19 @@ import os
 import sys
 import logging
 import json
+from dotenv import load_dotenv
 from google import genai
 from google.genai import types
+
+# Load environmental configurations from local workspace files
+load_dotenv()
+
+# Audit logging framework tracking pipeline telemetry
+logging.basicConfig(
+    filename='logs/pipeline_audit.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 class LLMStrategy(ABC): # pylint: disable=too-few-public-methods
     """Contract for any LLM to enrich Youtube transcripts"""
@@ -81,3 +92,17 @@ class TranscriptEnricher: # pylint: disable=too-few-public-methods
                 sys.stdout.flush()
             except Exception as e: # pylint: disable=broad-exception-caught
                 logging.error("Failed processing video %s: %s", video_id, str(e))
+
+def main():
+    """Runs the pipeline"""
+    logging.info("Pipeline Step 2B (Gemini Enrichment) started.")
+
+    strategy = GeminiStrategy()
+    engine = TranscriptEnricher(strategy)
+    engine.run_stream()
+
+    logging.info("Pipeline Step 2B finished.")
+
+
+if __name__ == "__main__":
+    main()
