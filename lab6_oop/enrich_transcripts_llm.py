@@ -53,3 +53,31 @@ class GeminiStrategy(LLMStrategy):  # pylint: disable=too-few-public-methods
         )
 
         return json.loads(response.text)
+
+class TranscriptEnricher: # pylint: disable=too-few-public-methods
+    """Vendor-neutral engine: streams jsonl records through an injected LLM strategy."""
+
+    def __init__(self, strategy: LLMStrategy):
+        self.strategy = strategy
+
+    def run_stream(self):
+        """Parses json file to jsonl file if able. writes out to stdout if able"""
+        for line in sys.stdin:
+            line = line.strip()
+            if not line:
+                continue
+
+            try:
+                payload = json.loads(line)
+                video_id = payload["video_id"]
+                raw_text = payload["raw_text"]
+            except Exception as e: # pylint: disable=broad-exception-caught
+                logging.error("Failed to parse incoming JSON payload row: %s", str(e))
+                continue
+
+            try:
+                result = self.strategy.enrich(video_id, raw_text)
+                sys.stdout.write(json.dumps(result) + "\n")
+                sys.stdout.flush()
+            except Exception as e: # pylint: disable=broad-exception-caught
+                logging.error("Failed processing video %s: %s", video_id, str(e))
