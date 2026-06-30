@@ -25,6 +25,7 @@ class GeminiStrategy(LLMStrategy):  # pylint: disable=too-few-public-methods
         self.client = genai.Client(api_key=api_key)
 
     def enrich(self, video_id: str, raw_text: str) -> dict:
+        """AI cleanup of transcript"""
         response_schema = {
             "type": "OBJECT",
             "properties": {
