@@ -18,3 +18,6 @@ test: lint
 
 test_enrich:
 	@. env/bin/activate && cat mock_transcripts.jsonl | python -u lab5_enrich_transcript/enrich_transcripts.py | python lab5_enrich_transcript/validate_schema.py
+
+test_oop:
+	@. env/bin/activate && cat mock_transcripts.jsonl | python -u lab6_oop/enrich_transcripts_llm.py
