@@ -15,8 +15,7 @@ update:  env
 	. $(ACTIVATE); pip install -r requirements.txt
 
 lint:
-	-pylint bin/clean_ids.py
-	-pylint bin/extract_transcripts.py
+	$(PYTHON) -m pylint bin/ lib/ tests/
 
 test: lint
 	$(PYTHON) -m pytest -v tests
