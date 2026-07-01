@@ -222,3 +222,4 @@ __marimo__/
 **/*.log
 *.pyc
 scripts/env/
+**/*.pyc
