@@ -10,14 +10,14 @@ update:  env
 	. env/bin/activate; pip install -r requirements.txt
 
 lint:
-	-pylint lab2_cleaning_ids/clean_ids.py
-	-pylint lab4_transcript_testing/extract_transcripts.py
+	-pylint bin/clean_ids.py
+	-pylint bin/extract_transcripts.py
 
 test: lint
 	python -m pytest -v tests
 
 test_enrich:
-	@. env/bin/activate && cat mock_transcripts.jsonl | python -u lab5_enrich_transcript/enrich_transcripts.py | python lab5_enrich_transcript/validate_schema.py
+	@. env/bin/activate && cat lib/mock_transcripts.jsonl | python -u bin/enrich_transcripts.py | python bin/validate_schema.py
 
 test_oop:
 	@. env/bin/activate && cat mock_transcripts.jsonl | python -u lab6_oop/enrich_transcripts_llm.py

@@ -5,7 +5,7 @@ import pytest
 from youtube_transcript_api import YouTubeTranscriptApi
 
 # Import the executable main entry point loop from your pipeline package directory
-from lab4_transcript_testing.extract_transcripts import main
+from bin.extract_transcripts import main
 
 class MockTranscriptContainer:
     """Mimics the 2026 .to_raw_data() array output return schema"""

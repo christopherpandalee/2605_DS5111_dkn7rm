@@ -5,7 +5,7 @@ import pytest
 from youtube_transcript_api import YouTubeTranscriptApi
  
 # The executable entry point of your pipeline.
-from lab4_transcript_testing.extract_transcripts import main
+from bin.extract_transcripts import main
  
  
 class MockTranscriptContainer:

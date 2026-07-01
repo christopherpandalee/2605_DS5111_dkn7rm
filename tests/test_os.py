@@ -2,7 +2,7 @@ import sys
 import io
 import platform
 import pytest
-from lab2_cleaning_ids.clean_ids import main
+from bin.clean_ids import main
 
 # ---------------------------------------------------------------------------
 # Helpers
