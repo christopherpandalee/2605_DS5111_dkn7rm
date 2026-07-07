@@ -78,8 +78,14 @@ To automate the setup, we'll create 4 initialization files.
 - Run `git commit -m ""`, with a short but descriptive message inside the quotes.
 - Run `git push` to send your work to your repo.
 
-**Requirements**
-| Requirement | Keys |
-| *---------* | *--* |
-
 With all luck, you have now created an automated way to start up a new VM.
+
+**Requirements**
+| Requirement | Key | Value | Comments |
+| *------*| *-----* |
+| Github | USER | github email | --- |
+| Github | NAME | github username | --- |
+| Proxy | proxy_user | WEBSHARE_USER | Requires proxy services |
+| Proxy | proxy_pass | WEBSHARE_PASSWORD | Requires proxy services |
+| Gemini | api_key | GEMINI_API_KEY | Requires Gemini API Key |
+
