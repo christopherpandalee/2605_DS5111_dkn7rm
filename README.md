@@ -81,6 +81,7 @@ To automate the setup, we'll create 4 initialization files.
 With all luck, you have now created an automated way to start up a new VM.
 
 **Requirements**
+
 | Requirement | Key | Value | Comments |
 | ------ | ----- |
 | Github | USER | github email | --- |
