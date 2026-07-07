@@ -82,7 +82,7 @@ With all luck, you have now created an automated way to start up a new VM.
 
 **Requirements**
 | Requirement | Key | Value | Comments |
-| *------*| *-----* |
+| *------* | *-----* |
 | Github | USER | github email | --- |
 | Github | NAME | github username | --- |
 | Proxy | proxy_user | WEBSHARE_USER | Requires proxy services |
