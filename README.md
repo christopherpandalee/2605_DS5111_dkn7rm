@@ -84,8 +84,8 @@ With all luck, you have now created an automated way to start up a new VM.
 
 | Requirement | Key | Value | Comments |
 | --- | --- | --- | --- |
-| Github | USER | github email | --- |
-| Github | NAME | github username | --- |
+| Github | USER | github email |  |
+| Github | NAME | github username |  |
 | Proxy | proxy_user | WEBSHARE_USER | Requires proxy services |
 | Proxy | proxy_pass | WEBSHARE_PASSWORD | Requires proxy services |
 | Gemini | api_key | GEMINI_API_KEY | Requires Gemini API Key |
