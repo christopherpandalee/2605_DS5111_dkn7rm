@@ -53,3 +53,17 @@
 2026-07-14 15:00:25,264 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
 2026-07-14 15:00:25,265 - ERROR - Failed processing video ds5111_v002 during LLM generation: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
 2026-07-14 15:00:25,265 - INFO - Pipeline Step 2B finished.
+2026-07-14 15:21:37,395 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-14 15:21:37,431 - INFO - Orchestrating Gemini enrichment for video: ds5111_v001
+2026-07-14 15:21:37,431 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-14 15:21:39,261 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-14 15:21:39,262 - INFO - Orchestrating Gemini enrichment for video: ds5111_v002
+2026-07-14 15:21:39,263 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-14 15:21:42,954 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-14 15:21:42,955 - INFO - Pipeline Step 2B finished.
+2026-07-14 15:31:16,313 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-14 15:31:16,350 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-14 15:31:18,810 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-14 15:31:18,812 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-14 15:31:20,702 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-14 15:31:20,703 - INFO - Pipeline Step 2B finished.
