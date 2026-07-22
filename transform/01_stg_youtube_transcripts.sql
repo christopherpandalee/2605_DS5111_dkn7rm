@@ -5,5 +5,5 @@ SELECT
     data:cleaned_text::STRING AS CLEANED_TEXT,
     data:tech_terms AS TECH_TERMS_ARRAY,
     data:book_names AS BOOK_NAMES_ARRAY,
-    INSERTED_AT
+    loaded_at
 FROM DKN7RM.RAW_TRANSCRIPTS;
