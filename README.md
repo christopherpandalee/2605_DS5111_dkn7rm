@@ -1,6 +1,11 @@
 # 2605_DS5111_dkn7rm
 This is my repo for Summer 2026 DS5111 Software & Automation Skills
 
+**Project Core Objective:**
+This repo is for documenting the files and changes for the DS5111 Summer 2026 class. The main pipeline to learn the skills for software automation is a pipeline for taking audio and video sources and extracting the transcripts in an ordered way for use later.
+
+Below, you'll find a short setup guide for an environment on a VM:
+
 If you're starting up a VM, this is a short setup guide to make sure you have the same coding environment every time.
 You'll need a github SSH key for this setup. If you don't have one, you'll have to do two things:
 
@@ -74,3 +79,14 @@ To automate the setup, we'll create 4 initialization files.
 - Run `git push` to send your work to your repo.
 
 With all luck, you have now created an automated way to start up a new VM.
+
+**Requirements**
+
+| Requirement | Key | Value | Comments |
+| --- | --- | --- | --- |
+| Github | USER | github email |  |
+| Github | NAME | github username |  |
+| Proxy | proxy_user | WEBSHARE_USER | Requires proxy services |
+| Proxy | proxy_pass | WEBSHARE_PASSWORD | Requires proxy services |
+| Gemini | api_key | GEMINI_API_KEY | Requires Gemini API Key |
+

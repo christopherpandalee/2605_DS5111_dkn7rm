@@ -2,7 +2,7 @@ import sys
 import io
 import json
 import pytest
-from lab5_enrich_transcript.enrich_transcripts import main
+from bin.enrich_transcripts import main
 
 # 1. Build a dummy container mimicking the Gemini SDK response hierarchy
 class MockGeminiResponse:

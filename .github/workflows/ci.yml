@@ -2,6 +2,14 @@ name: DS5111 Continuous Integration
 
 on:
   push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  # lints repo code
+  lint:
+    name: Lint Codebase
     branches: [ main ]
   pull_request:
     branches: [ main ]
@@ -13,6 +21,12 @@ jobs:
     # Define the execution matrix
     strategy:
       matrix:
+        python-version: ['3.11', '3.12', '3.13']
+      # Optional: set fail-fast to false so one failing version doesn't cancel the other
+      #fail-fast: false
+
+    steps:
+    # -checkout repo code, check python, install dependencies, lint codebase
         python-version: ['3.12']
       # Optional: set fail-fast to false so one failing version doesn't cancel the other
       fail-fast: false
@@ -24,20 +38,48 @@ jobs:
     - name: Set up Python runtime
       uses: actions/setup-python@v5
       with:
-        python-version: ${{ matrix.python-version }} 
+        python-version: ${{ matrix.python-version }}
 
     - name: Check Python Version
       run: |
         python --version
 
-#    - name: Install pipeline dependencies
-#      run: |
-#        make update
-#
-#    - name: Lint codebase with Pylint
-#      run: |
-#        make lint
-#
-#    - name: Execute automated test suite with Pytest
-#      run: |
-#        make test
+    - name: Install pipeline dependencies
+      run: |
+        make update
+
+    - name: Install Runtime Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Lint codebase with Pylint - Run code quality checks
+      run: |
+        make lint
+
+  test:
+  # runs the test code
+    name: Unit Testing Engine (pytest)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+
+    steps:
+    # -checkout repo code, setup python, install dependencies, run test files
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Set up Python runtime
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install Runtime Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Execute automated test suite with Pytest - Run complete test engine suite
+        run: |
+          make test

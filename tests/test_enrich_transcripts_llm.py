@@ -1,7 +1,7 @@
 import sys
 import io
 import json
-from lab6_oop.enrich_transcripts_llm import LLMStrategy, TranscriptEnricher
+from bin.enrich_transcripts_llm import LLMStrategy, TranscriptEnricher
 
 
 class MockLLMStrategy(LLMStrategy):  # pylint: disable=too-few-public-methods
