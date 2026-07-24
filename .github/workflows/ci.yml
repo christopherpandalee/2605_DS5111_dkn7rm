@@ -10,6 +10,12 @@ jobs:
   # lints repo code
   lint:
     name: Lint Codebase
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
     runs-on: ubuntu-latest
 
     # Define the execution matrix
@@ -21,6 +27,11 @@ jobs:
 
     steps:
     # -checkout repo code, check python, install dependencies, lint codebase
+        python-version: ['3.12']
+      # Optional: set fail-fast to false so one failing version doesn't cancel the other
+      fail-fast: false
+      
+    steps:
     - name: Check out repository code
       uses: actions/checkout@v4
 
