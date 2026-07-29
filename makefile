@@ -24,7 +24,7 @@ test_enrich:
 	@. $(ACTIVATE) && cat lib/mock_transcripts.jsonl | python -u bin/enrich_transcripts.py | python bin/validate_schema.py
 
 test_oop:
-	@. $(ACTIVATE) && cat mock_transcripts.jsonl | python -u lab6_oop/enrich_transcripts_llm.py
+	@. $(ACTIVATE) && cat lib/mock_transcripts.jsonl | python -u bin/enrich_transcripts_llm.py
 
 load:
 	@echo "Initiating Cloud Data Warehouse Synchronizer Node..."
