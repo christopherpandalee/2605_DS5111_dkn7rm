@@ -6,4 +6,4 @@ SELECT
     data:tech_terms AS TECH_TERMS_ARRAY,
     data:book_names AS BOOK_NAMES_ARRAY,
     loaded_at
-FROM DKN7RM.RAW_TRANSCRIPTS;
+FROM DKN7RM.RAW_TRANSCRIPTS

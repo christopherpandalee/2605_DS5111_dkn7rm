@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: my_database_sources # You can name this whatever makes sense
+    schema: DKN7RM # The schema shown in your screenshot
+    tables:
+      - name: FCT_ENTITIES_TERMS
+
+models:
+  - name: mart_tech_term_pivot
+    columns:
+      - name: video_id
+        tests:
+          - not_null
+          - unique
