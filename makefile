@@ -1,4 +1,4 @@
-.PHONY: lint test
+.PHONY: lint test load
 
 default:
 	@cat makefile
@@ -25,3 +25,7 @@ test_enrich:
 
 test_oop:
 	@. $(ACTIVATE) && cat mock_transcripts.jsonl | python -u lab6_oop/enrich_transcripts_llm.py
+
+load:
+	@echo "Initiating Cloud Data Warehouse Synchronizer Node..."
+	cat lib/mock_transcripts.jsonl | python bin/load_snowflake.py
