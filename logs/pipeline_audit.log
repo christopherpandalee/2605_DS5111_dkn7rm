@@ -112,3 +112,51 @@
 2026-07-29 23:08:25,992 - INFO - AFC is enabled with max remote calls: 10.
 2026-07-29 23:08:28,907 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
 2026-07-29 23:08:28,908 - INFO - Pipeline Step 2B finished.
+2026-07-30 15:56:16,016 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-30 15:56:16,090 - ERROR - Failed to parse incoming JSON payload row: 'tech_terms'
+2026-07-30 15:56:16,090 - ERROR - Failed to parse incoming JSON payload row: 'tech_terms'
+2026-07-30 15:56:16,090 - INFO - Pipeline Step 2B finished.
+2026-07-30 15:58:28,337 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-30 15:58:28,373 - ERROR - Failed to parse incoming JSON payload row: 'tech_terms'
+2026-07-30 15:58:28,373 - ERROR - Failed to parse incoming JSON payload row: 'tech_terms'
+2026-07-30 15:58:28,373 - INFO - Pipeline Step 2B finished.
+2026-07-30 15:58:46,118 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-30 15:58:46,158 - ERROR - Failed to parse incoming JSON payload row: 'tech_terms'
+2026-07-30 15:58:46,158 - ERROR - Failed to parse incoming JSON payload row: 'tech_terms'
+2026-07-30 15:58:46,158 - INFO - Pipeline Step 2B finished.
+2026-07-30 16:01:19,500 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-30 16:01:19,536 - ERROR - Failed to parse incoming JSON payload row: 'tech_terms'
+2026-07-30 16:01:19,536 - ERROR - Failed to parse incoming JSON payload row: 'tech_terms'
+2026-07-30 16:01:19,536 - INFO - Pipeline Step 2B finished.
+2026-07-30 17:26:16,671 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-30 17:26:16,707 - INFO - Orchestrating Gemini enrichment for video: ds5111_v001
+2026-07-30 17:26:16,710 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-30 17:26:19,451 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-30 17:26:19,453 - INFO - Orchestrating Gemini enrichment for video: ds5111_v002
+2026-07-30 17:26:19,453 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-30 17:26:21,905 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-30 17:26:21,906 - INFO - Pipeline Step 2B finished.
+2026-07-30 17:26:58,864 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-30 17:26:58,901 - INFO - Orchestrating Gemini enrichment for video: ds5111_v001
+2026-07-30 17:26:58,901 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-30 17:27:00,719 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-30 17:27:00,720 - INFO - Orchestrating Gemini enrichment for video: ds5111_v002
+2026-07-30 17:27:00,721 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-30 17:27:03,544 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-30 17:27:03,545 - INFO - Pipeline Step 2B finished.
+2026-07-30 17:28:27,925 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-30 17:28:27,962 - INFO - Orchestrating Gemini enrichment for video: ds5111_v001
+2026-07-30 17:28:27,962 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-30 17:28:29,841 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-30 17:28:29,842 - INFO - Orchestrating Gemini enrichment for video: ds5111_v002
+2026-07-30 17:28:29,843 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-30 17:28:32,144 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-30 17:28:32,145 - INFO - Pipeline Step 2B finished.
+2026-07-30 17:28:54,936 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-30 17:28:54,973 - INFO - Orchestrating Gemini enrichment for video: ds5111_v001
+2026-07-30 17:28:54,973 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-30 17:28:56,846 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-30 17:28:56,847 - INFO - Orchestrating Gemini enrichment for video: ds5111_v002
+2026-07-30 17:28:56,848 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-30 17:29:00,594 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-30 17:29:00,595 - INFO - Pipeline Step 2B finished.
