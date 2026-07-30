@@ -67,3 +67,48 @@
 2026-07-14 15:31:18,812 - INFO - AFC is enabled with max remote calls: 10.
 2026-07-14 15:31:20,702 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
 2026-07-14 15:31:20,703 - INFO - Pipeline Step 2B finished.
+2026-07-29 22:35:37,719 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-29 22:35:43,140 - INFO - Orchestrating Gemini enrichment for video: CctJNYYCPo0
+2026-07-29 22:35:43,143 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 22:36:35,064 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 22:40:54,256 - INFO - Orchestrating Gemini enrichment for video: zmL8FViuc8Q
+2026-07-29 22:40:54,256 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 22:42:43,406 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 22:42:43,407 - INFO - Pipeline Step 2B finished.
+2026-07-29 22:43:53,413 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-29 22:43:59,529 - INFO - Orchestrating Gemini enrichment for video: CctJNYYCPo0
+2026-07-29 22:43:59,530 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 22:45:01,544 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 22:45:01,547 - ERROR - Failed processing video CctJNYYCPo0 during LLM generation: [Errno 32] Broken pipe
+2026-07-29 22:45:01,557 - INFO - Orchestrating Gemini enrichment for video: zmL8FViuc8Q
+2026-07-29 22:45:01,557 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 22:46:20,365 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 22:46:20,367 - ERROR - Failed processing video zmL8FViuc8Q during LLM generation: [Errno 32] Broken pipe
+2026-07-29 22:46:20,367 - INFO - Pipeline Step 2B finished.
+2026-07-29 22:53:53,182 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-29 22:53:59,201 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 22:55:04,593 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 22:55:04,595 - ERROR - Failed processing video CctJNYYCPo0: [Errno 32] Broken pipe
+2026-07-29 22:55:04,595 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 22:56:01,988 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 22:56:01,992 - ERROR - Failed processing video zmL8FViuc8Q: [Errno 32] Broken pipe
+2026-07-29 22:56:01,992 - INFO - Pipeline Step 2B finished.
+2026-07-29 23:00:14,382 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-29 23:00:21,922 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 23:01:27,540 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 23:01:27,542 - ERROR - Failed processing video CctJNYYCPo0: [Errno 32] Broken pipe
+2026-07-29 23:01:27,542 - INFO - Pipeline Step 2B finished.
+2026-07-29 23:04:33,974 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-29 23:04:34,011 - INFO - Orchestrating Gemini enrichment for video: ds5111_v001
+2026-07-29 23:04:34,012 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 23:04:36,841 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 23:04:36,842 - INFO - Orchestrating Gemini enrichment for video: ds5111_v002
+2026-07-29 23:04:36,842 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 23:04:40,390 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 23:04:40,391 - INFO - Pipeline Step 2B finished.
+2026-07-29 23:08:23,816 - INFO - Pipeline Step 2B (Gemini Enrichment) started.
+2026-07-29 23:08:23,853 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 23:08:25,991 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 23:08:25,992 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-29 23:08:28,907 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-29 23:08:28,908 - INFO - Pipeline Step 2B finished.
