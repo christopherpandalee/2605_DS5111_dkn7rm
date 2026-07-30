@@ -1,5 +1,5 @@
 -- Step 1: Staging View (JSON Variant Parsing)
-{{ config(materialized='table') }}
+{{ config(materialized='view') }}
 SELECT
     data:video_id::STRING AS VIDEO_ID,
     data:cleaned_text::STRING AS CLEANED_TEXT,
