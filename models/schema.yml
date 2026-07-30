@@ -4,7 +4,7 @@ sources:
   - name: my_database_sources # You can name this whatever makes sense
     schema: DKN7RM # The schema shown in your screenshot
     tables:
-      - name: FCT_ENTITIES_TERMS
+      - name: FCT_TECH_TERMS
 
 models:
   - name: stg_youtube_transcripts
@@ -25,7 +25,7 @@ models:
           - unique
           - not_null
 
-  - name: fct_entities_mentions
+  - name: fct_book_mentions
     columns:
       - name: video_id
         tests:
