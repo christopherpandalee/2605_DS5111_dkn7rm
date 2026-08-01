@@ -45,7 +45,7 @@ class GeminiStrategy(LLMStrategy):  # pylint: disable=too-few-public-methods
                 "tech_terms": {"type": "ARRAY", "items": {"type": "STRING"}},
                 "book_names": {"type": "ARRAY", "items": {"type": "STRING"}},
             },
-            "required": ["video_id", "cleaned_text"],
+            "required": ["video_id", "cleaned_text", "tech_terms", "book_names"],
         }
 
         prompt = f"""
@@ -82,6 +82,8 @@ class TranscriptEnricher: # pylint: disable=too-few-public-methods
                 payload = json.loads(line)
                 video_id = payload["video_id"]
                 raw_text = payload["raw_text"]
+                tech_terms = payload["tech_terms"]
+                book_names = payload["book_names"]
             except Exception as e: # pylint: disable=broad-exception-caught
                 logging.error("Failed to parse incoming JSON payload row: %s", str(e))
                 continue

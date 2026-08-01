@@ -1,0 +1,13 @@
+default:
+  outputs:
+    dev:
+      account: ADILKSI-FQA59308
+      database: DS5111_DB
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      role: ds5111_student_role
+      schema: DKN7RM
+      threads: 1
+      type: snowflake
+      user: DKN7RM
+      warehouse: DS5111_WH
+  target: dev

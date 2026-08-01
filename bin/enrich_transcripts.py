@@ -72,6 +72,7 @@ def main():
         # extract the target 'video_id' and 'raw_text' properties. 
         # Log any malformed line tracks and continue processing the stream.
         # ---------------------------------------------------------------------
+        print(json.loads(line))
         try:
             # EXTRACT PAYLOAD DETAILS HERE
             payload = json.loads(line)
